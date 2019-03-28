@@ -1,0 +1,97 @@
+{
+    "editor.cursorStyle": "block",
+    "window.zoomLevel": 0,
+    "mssql.connections": [
+        {
+            "server": "CNS-ETDEVDB\\INST1",
+            "database": "",
+            "authenticationType": "Integrated",
+            "profileName": "DevUS",
+            "password": ""
+        }
+    ],
+    "vim.leader": "s",
+    "vim.easymotion": true,
+    // "vim.insertModeKeyBindings": [
+    //     {
+    //         "before":["<C-c>"],
+    //         "commands": [
+    //             "editor.action.clipboardCopyAction"
+    //         ]
+    //     },
+    //     {
+    //         "before":["<C-v>"],
+    //         "commands": [
+    //             "editor.action.clipboardPasteAction"
+    //         ]
+    //     }
+    // ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before":["<leader>", "p"],
+            "commands": [
+                "workbench.action.quickOpen",
+            ]
+        },
+        {
+            "before":["<leader>", "b"],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility",
+            ]
+        },
+        {
+            "before":["<leader>", "i"],
+            "commands": [
+                "editor.action.goToImplementation",
+            ]
+        },
+        {
+            "before":["<leader>", "k"],
+            "commands": [
+                "workbench.action.navigateForward",
+            ]
+        },
+        {
+            "before":["<leader>", "j"],
+            "commands": [
+                "workbench.action.navigateBack",
+            ]
+        },
+        {
+            "before":["<leader>", "k", "o"],
+            "commands": [
+                "workbench.action.keepEditor",
+            ]
+        },
+        {
+            "before":["<leader>", "f", "s"],
+            "commands": [
+                "editor.action.formatSelection",
+            ]
+        },
+        {
+            "before":["<leader>", "f", "d"],
+            "commands": [
+                "editor.action.formatDocument",
+            ]
+        }
+    ],
+    "editor.tabSize": 2,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue-html",
+        {
+        "language": "vue",
+        "autoFix": true
+        }
+    ],
+    "eslint.autoFixOnSave": true,
+    "eslint.run": "onSave",
+    "workbench.sideBar.location": "left",
+    "workbench.activityBar.visible": true,
+    "editor.minimap.enabled": false,
+    "editor.formatOnType": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+}
