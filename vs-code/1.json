@@ -1,0 +1,47 @@
+{
+    "window.zoomLevel": 0,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue-html",
+        {
+        "language": "vue",
+        "autoFix": true
+        }
+    ],
+    "eslint.run": "onSave",
+    "eslint.autoFixOnSave": true,
+    "workbench.activityBar.visible": true,
+    "breadcrumbs.enabled": false,
+    "window.menuBarVisibility": "default",
+    "editor.minimap.enabled": false,
+    "vim.leader": "s",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "z"],
+            "commands": [
+                "workbench.action.togglePanel",
+                "workbench.action.navigateToLastEditLocation"
+            ]
+        },
+        {
+            "before": ["<leader>", "s"],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility",
+                "workbench.action.navigateToLastEditLocation"
+            ]
+        },
+        {
+            "before": ["<leader>", "p"],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": ["<leader>", "k", "o"],
+            "commands": [
+                "workbench.action.keepEditor"
+            ]
+        }
+    ]
+}
