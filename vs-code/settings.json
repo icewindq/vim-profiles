@@ -1,5 +1,4 @@
 {
-    "editor.cursorStyle": "block",
     "window.zoomLevel": 0,
     "mssql.connections": [
         {
@@ -46,6 +45,12 @@
             ]
         },
         {
+            "before":["<leader>", "r"],
+            "commands": [
+                "references-view.find",
+            ]
+        },
+        {
             "before":["<leader>", "k"],
             "commands": [
                 "workbench.action.navigateForward",
@@ -58,9 +63,33 @@
             ]
         },
         {
-            "before":["<leader>", "k", "o"],
+            "before":["<leader>", "l"],
+            "commands": [
+                "workbench.files.action.showActiveFileInExplorer",
+            ]
+        },
+        {
+            "before":["<leader>", "o", "e"],
+            "commands": [
+                "workbench.action.files.revealActiveFileInWindows",
+            ]
+        },
+        {
+            "before":["<leader>", "g", "k"],
             "commands": [
                 "workbench.action.keepEditor",
+            ]
+        },
+        {
+            "before":["<leader>", "z", "z"],
+            "commands": [
+                "workbench.action.toggleZenMode",
+            ]
+        },
+        {
+            "before":["<leader>", "z", "0"],
+            "commands": [
+                "editor.foldLevel1",
             ]
         },
         {
@@ -76,7 +105,6 @@
             ]
         }
     ],
-    "editor.tabSize": 2,
     "eslint.validate": [
         "javascript",
         "javascriptreact",
@@ -88,10 +116,15 @@
     ],
     "eslint.autoFixOnSave": true,
     "eslint.run": "onSave",
-    "workbench.sideBar.location": "left",
     "workbench.activityBar.visible": true,
     "editor.minimap.enabled": false,
-    "editor.formatOnType": true,
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "omnisharp.enableRoslynAnalyzers": true,
+    "workbench.colorTheme": "Default Light+",
+    "editor.fontSize": 14,
+    "editor.rulers": [120],
+    "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#c5cad8"
+    }
 }
